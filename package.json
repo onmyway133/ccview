@@ -1,0 +1,38 @@
+{
+  "name": "ccview",
+  "version": "1.0.0",
+  "description": "Terminal UI for browsing Claude Code tools — skills, agents, commands, hooks, plugins, and more",
+  "bin": {
+    "ccview": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/index.tsx --outfile dist/index.js --target bun --external react-devtools-core",
+    "dev": "bun run src/index.tsx",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "gray-matter": "^4.0.3",
+    "ink": "^5.0.1",
+    "ink-text-input": "^6.0.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "bun-types": "^1.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cli",
+    "tui",
+    "anthropic"
+  ],
+  "license": "MIT"
+}

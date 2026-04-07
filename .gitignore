@@ -1,0 +1,6 @@
+.claude/
+node_modules/
+dist/
+*.local
+.DS_Store
+bun.lockb
