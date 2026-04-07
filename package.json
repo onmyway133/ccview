@@ -7,10 +7,11 @@
   },
   "type": "module",
   "scripts": {
-    "build": "bun build src/index.tsx --outfile dist/index.js --target bun --external react-devtools-core",
+    "build": "bun run build.ts",
     "dev": "bun run src/index.tsx",
     "test": "bun test",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+    "release": "bun run release.ts"
   },
   "dependencies": {
     "chalk": "^5.3.0",
