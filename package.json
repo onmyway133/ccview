@@ -1,5 +1,5 @@
 {
-  "name": "ccview",
+  "name": "@onmyway133/ccview",
   "version": "1.0.0",
   "description": "Terminal UI for browsing Claude Code tools — skills, agents, commands, hooks, plugins, and more",
   "bin": {

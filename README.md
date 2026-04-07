@@ -27,15 +27,28 @@ Terminal UI for browsing all Claude Code tools installed on your system — skil
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
+## Install
+
+```bash
+npm install -g @onmyway133/ccview
+```
+
+Or run without installing:
+
+```bash
+bunx @onmyway133/ccview
+npx @onmyway133/ccview
+```
+
 ## Usage
 
 ```bash
 # Run from inside your project — picks up project tools automatically
 cd your-project
-bunx ccview
+ccview
 
 # Or point at a specific project
-bunx ccview --project /path/to/project
+ccview --project /path/to/project
 ```
 
 Requires [Bun](https://bun.sh) and Claude Code installed (`~/.claude/`).
