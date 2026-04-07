@@ -20,7 +20,7 @@ await Bun.write("package.json", text.replace(`"version": "${pkg.version}"`, `"ve
 
 await $`git add package.json`;
 await $`git commit -m "Release ${next}"`;
-await $`git tag v${next}`;
+await $`git tag ${next}`;
 await $`git push && git push --tags`;
 await $`npm publish --access public`;
 
